@@ -63,6 +63,14 @@
 			$('#selectSort').dropdown();
 			$('.ui.checkbox').checkbox();
 			$('.ui.embed').embed();
+			$('.message .close')
+			  .on('click', function() {
+			    $(this)
+			      .closest('.message')
+			      .transition('fade')
+			    ;
+			  })
+			;
 		});
 	</script>
 </body>
